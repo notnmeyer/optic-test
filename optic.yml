@@ -1,0 +1,3 @@
+files:
+  - path: petstore.yml
+    id: Swagger-Petstore

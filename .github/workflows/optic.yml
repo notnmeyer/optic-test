@@ -1,0 +1,15 @@
+name: Optic
+
+on: [pull_request]
+
+jobs:
+  optic-run:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v3
+      - name: optic run
+        uses: opticdev/github-action@v1
+        with:
+          token: ${{ secrets.OPTIC_TOKEN }} # You will need to connect up your secret here
+          base: ${{ github.event.pull_request.base.ref }}
