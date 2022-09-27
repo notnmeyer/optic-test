@@ -16,7 +16,7 @@ paths:
       parameters:
         - name: limit
           in: query
-          description: Number of items to return at one time (max 1000)
+          description: Number of items to return at one time (max 10000)
           required: false
           schema:
             type: integer
