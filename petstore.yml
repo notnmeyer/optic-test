@@ -12,7 +12,7 @@ paths:
       summary: List all pets
       operationId: listPets
       tags:
-        - pets
+        - petz
       parameters:
         - name: limit
           in: query
